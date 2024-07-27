@@ -1,0 +1,127 @@
+body {
+    background-image: url('sathyabama.jpg'); /* Add the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+}
+.card {
+    margin-bottom: 20px; /* Add a margin bottom to create a gap between rows */
+}
+
+.modal-content {
+    max-width: 100%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.card-body {
+    flex-grow: 1;
+}
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titlecard{
+    background: linear-gradient(30deg,red,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container {
+    position: relative; /* Relative positioning for absolute positioning of the button */
+    text-align: left; /* Align the button to the left side */
+}
+
+.search-bar {
+    margin-top: 30px; /* Move the search bar down */
+    margin-bottom: 10px;
+    border-color: chartreuse;
+    background: transparent;
+}
+
+#searchInput {
+    width: 200px; /* Set the width of the search input */
+    height: 30px; /* Set the height of the search input */
+    font-size: 16px; /* Adjust the font size */
+}
+
+/* Add the rest of your styles here */
+
+
+.titlecard{
+    background: linear-gradient(30deg,red,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.container {
+    position: relative; /* Relative positioning for absolute positioning of the button */
+    text-align: left; /* Align the button to the left side */
+    
+   
+    /* -webkit-text-fill-color: transparent; */
+    
+}
+.search-bar {
+    margin-top: 30px; /* Move the search bar down */
+    margin-bottom: 10px;
+    border-color: chartreuse;
+}
+
+#searchinput {
+    width: 50px; /* Set the width of the search input */
+    height: 30px; /* Set the height of the search input */
+    font-size: 16px; /* Adjust the font size */
+}
+.btn btn-primary open-image-btn{
+    align-items: center;
+}
+
+
+#openImageBtn {
+    display: block; /* Make the button a block element */
+    
+}
+
+.image-container {
+    display: none; /* Initially hide the image container */
+}
+
+.visible {
+    display: block; /* Show the image container when the button is clicked */
+}
+
+.image-container img {
+    max-width: 100%; /* Adjust image size */
+    height: auto;
+}
+
+.close-btn {
+    position: absolute; /* Position the close button relative to the image container */
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+    z-index: 1; /* Ensure it's above the image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: white; /* Color of the close button */
+    font-size: 24px; /* Adjust font size of the close button */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    padding: 5px; /* Padding around the close button */
+    border-radius: 50%; /* Make the button round */
+}
+
+.close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}

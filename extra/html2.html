@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Cards with Circular Images</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-img-top {
+      height: 200px; /* Adjust the height as needed */
+      width: 200px; /* Adjust the width as needed */
+      object-fit: cover;
+      border-radius: 50%; /* Ensures the image is a perfect circle */
+      display: block;
+      margin: 0 auto; /* Center the image */
+    }
+    .center-text {
+      text-align: center; /* Center align the text */
+    }
+    .faculty-background {
+      background-image: url('faculty.jpeg'); /* Specify the path to your background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="faculty-background">
+ 
+  <div class="container">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="SASIKALA image.jpg" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title center-text">Dr. T. Sasikala</h5>
+                    <p>DEAN</p>
+                    <a href="#" class="btn btn-primary d-block mx-auto" data-toggle="modal" data-target="#exampleModal1">Profile</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="VIGNESHWARI image.jpeg" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <h5 class="card-title center-text">Dr. S.Vigneshwari</h5>
+                    <p class="card-text">CSE HOD</p>
+                    <a href="#" class="btn btn-primary d-block mx-auto" data-toggle="modal" data-target="#exampleModal2">Profile</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="L.LAKSHMANAN image.jpeg" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title center-text">L.LAKSHMANAN</h5>
+                    <p class="card-text">CSE HOD</p>
+                    <a href="#" class="btn btn-primary d-block mx-auto" data-toggle="modal" data-target="#exampleModal3">Go Somewhere</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="image pt.jpg" class="card-img-top" alt="Image 4">
+                <div class="card-body">
+                    <h5 class="card-title center-text">Card 4</h5>
+                    <a href="#" class="btn btn-primary">Go Somewhere</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="image5.jpg" class="card-img-top" alt="Image 5">
+                <div class="card-body">
+                    <h5 class="card-title center-text">Card 5</h5>
+                    <a href="#" class="btn btn-primary">Go Somewhere</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="image6.jpg" class="card-img-top" alt="Image 6">
+                <div class="card-body">
+                    <h5 class="card-title center-text">Card 6</h5>
+                    <a href="#" class="btn btn-primary">Go Somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel1">Dr. T. Sasikala</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Dr. T. Sasikala joined Sathyabama Institute of Science and Technology as a Lecturer in the year 1997. She has completed her M.E. Computer Science and Engineering in the year 2001 in Sathyabama Engineering College affiliated to Madras University. She has completed her Ph.D. in the year 2009 in Sathyabama University. She has totally 29 years of experience in Teaching, Administration and Research. Her area of research interest is Computer Networks and Security.</p>
+          <h6>Experience</h6>
+          <ul>
+            <li>Professor & Dean for School of Computing in Sathyabama Institute of Science & Technology from 10 October 2018 to till date.</li>
+            <li>Principal in JEPPIAAR SRR Engineering College, Chennai from June 2010 to October 2018.</li>
+            <li>Assistant Professor and Professor in Sathyabama University, Chennai from May 1997 to May 2010.</li>
+            <li>Lecturer in Noorul Islam Engineering College, Kanyakumari District from June 1993 to May 1997.</li>
+            <li>Programmer cum Instructor in BITS Information Technology, Nagercoil from May 1991 to May 1993.</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">Dr. S. Vigneshwari</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Dr. S. Vigneshwari joined as a Lecturer in Department of Computer Science and Engineering, Sathyabama Institute of Science and Technology in June 2007. She has completed her PhD in the year 2016. Her research interests are Artificial Intelligence and Machine Learning, Deep Learning, Semantic web, Big data analytics, IoT, Data Science and Computer Vision.</p>
+          <h6>Achievements</h6>
+          <ul>
+            <li>Worked for obtaining NBA accreditation by CSE department in 2020.</li>
+            <li>Prepared and submitted relevant CSE department documents for ARIIA, 12B, NIRF.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel3">Computer Science Engineering Professor</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>The dignified computer science engineering professor with more than 20 years of experience in teaching at the University level and 2 years in industry. Established the thorough discipline in the practice of information and technology curriculum, have been involved in the development and launch of pioneering research and interdisciplinary programs. Strong philosophy of teaching, and knowledge of many different methods to motivate students to develop their expertise in specific areas. Dedicated to university programs and outreach events that help promote learning and support the community. Distinguished record of publication in academic journals with more than 40 papers in International level Journals and Conferences, Editorial board member/reviewer of International/National Journals. Published 3 Book Chapters and one patent at the academic level. Received fund for Rs.56.0 Lakhs from DST-FIST Program of Government of India, to setup wireless sensor network and Internet of Things Lab in the department.</p>
+          <h6>Experience</h6>
+          <ul>
+            <li>More than 20 years of Experience in teaching and 2 years’ experience in industry</li>
+          </ul>
+          <h6>Achievements</h6>
+          <ul>
+            <li>Program Head in NBA Accreditation process</li>
+            <li>Infrastructure development research project got approved and received Rs.56.0 Lakhs in the year 2018 from DST, Government of India.</li>
+            <!-- Include other achievements as needed -->
+          </ul>
+          <!-- Include other information as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap JS (optional, only if you need JavaScript features) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

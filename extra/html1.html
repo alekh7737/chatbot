@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .modal-content {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Search bar -->
+        <div class="search-bar">
+            <div class="col">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search card...">
+            </div>
+        </div>
+        <div class="titlecard">The below are the Cards for the particular Blocks</div>
+        <div class="row">
+            <!-- Your card elements -->
+            <div class="col-md-4" data-name="Card 1">
+                <div class="card">
+                    <img src="dental block1.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">dental block</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="dental block.jpg" data-name="Card 1">Open</button>
+                    </div>
+                </div>               
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="admission block photo.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Administration block</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="admission block.jpg" data-name="Card 2">Open</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="advanced block1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced block</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="advanced block.png" data-name="Card 3">Open</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add two more cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="library photo.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Library</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="library.jpg" data-name="Card 4">Open</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="research center photo4.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Research center</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="reseach center.jpg" data-name="Card 5">Open</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="research park2 photo.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Research park</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="research block.jpg" data-name="Card 6">Open</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="paul1.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paul Block</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="paul block.jpg" data-name="Card 7">Open</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="indore1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Indore stadium</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="indore stadium.png" data-name="Card 8">Open</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="aditorium.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Open Aditorium</h5>
+                        <p class="card-text">Click to open Map ↓</p>
+                        <button class="btn btn-primary open-image-btn" data-src="open aditorium.png" data-name="Card 9">Open</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const openImageBtns = document.querySelectorAll('.open-image-btn');
+            openImageBtns.forEach(button => {
+                button.addEventListener('click', function() {
+                    const imageUrl = button.getAttribute('data-src');
+                    const imageName = button.getAttribute('data-name');
+                    openImageInModal(imageUrl, imageName);
+                });
+            });
+
+            // Add event listener for search input
+            document.getElementById('searchInput').addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    const searchTerm = this.value.trim();
+                    searchCard(searchTerm);
+                }
+            });
+        });
+
+        function openImageInModal(imageUrl, imageName) {
+            const modalContent = `
+                <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">${imageName}</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="${imageUrl}" class="img-fluid" alt="${imageName}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            // Remove any existing modals before adding a new one
+            $('#imageModal').remove();
+            document.body.insertAdjacentHTML('beforeend', modalContent);
+            $('#imageModal').modal('show');
+        }
+
+        function searchCard(searchTerm) {
+            const cards = document.querySelectorAll('.card');
+            let cardFound = false;
+            cards.forEach(card => {
+                const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
+                if (cardTitle.includes(searchTerm.toLowerCase())) {
+                    card.style.display = 'block';
+                    cardFound = true;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            if (!cardFound) {
+                alert('The card is not present.');
+            }
+        }
+    </script>
+</body>
+</html>
